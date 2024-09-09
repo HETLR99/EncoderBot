@@ -17,6 +17,7 @@ APP_HASH = os.environ.get('APP_HASH', '4b1c9df2c3a604446539d77929f40d90')# Telgr
 OWNER_ID = int(os.environ.get('OWNER_ID', 6169288210))
 MONGO_DB = os.environ.get("MONGO_DB", 'mongodb+srv://mrhex86:mrhex86@cluster0.8pxiirj.mongodb.net/?retryWrites=true&w=majority') #MONGO DB FOR ANIME DATA
 FILES_CHANNEL = os.environ.get("FILES_CHANNEL", -1002164397675)
+BOT_NAME = os.environ.get('BOT_NAME', 'الملك🙃🙃')
 #<---------------Connecting-------------->
 if BOT_TOKEN is not None:
     try:
