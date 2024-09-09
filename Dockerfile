@@ -5,4 +5,4 @@ RUN apt -qq update && apt -qq install -y ffmpeg mediainfo build-essential
 COPY . .
 RUN python3 -m pip install --upgrade pip 
 RUN pip3 install -r requirements.txt
-CMD ["bash","run.sh"]
+CMD gunicorn app:app & python3 -m Bot
